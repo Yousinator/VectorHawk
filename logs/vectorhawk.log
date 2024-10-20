@@ -1,0 +1,10 @@
+2024-10-21 00:22:42,918 - vectorhawk - DEBUG - Elasticsearch Host: http://localhost:9200
+2024-10-21 00:22:42,918 - vectorhawk - DEBUG - Elasticsearch User: elastic
+2024-10-21 00:22:42,918 - vectorhawk - DEBUG - LLM Model: mistral-7b
+2024-10-21 00:22:42,918 - vectorhawk - DEBUG - Debug Mode: True
+2024-10-21 00:22:42,918 - vectorhawk - INFO - Core configuration is working as expected!
+2024-10-21 00:23:04,655 - vectorhawk - DEBUG - Elasticsearch Host: http://localhost:9200
+2024-10-21 00:23:04,656 - vectorhawk - DEBUG - Elasticsearch User: elastic
+2024-10-21 00:23:04,656 - vectorhawk - DEBUG - LLM Model: mistral-7b
+2024-10-21 00:23:04,656 - vectorhawk - DEBUG - Debug Mode: True
+2024-10-21 00:23:04,656 - vectorhawk - INFO - Core configuration is working as expected!
