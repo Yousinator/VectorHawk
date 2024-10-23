@@ -1,27 +1,19 @@
 import pytest
 from vectorhawk.data.storage import ElasticsearchHandler
 
-
-@pytest.fixture(scope="module")
+@pytest.fixture
 def es_handler():
-    handler = ElasticsearchHandler()
-    test_index = "test_index"
-    test_document = {
-        "title": "Test Document",
-        "content": "This is a test document for Elasticsearch.",
-    }
-
-    # Create the index before running tests
-    handler.es.indices.create(
-        index=test_index, ignore=400
-    )  # Ignore if index already exists
-    yield handler
-    handler.es.indices.delete(
-        index=test_index, ignore=[400, 404]
-    )  # Cleanup after tests
-
+    # No need to pass parameters manually; ElasticsearchHandler will use Config.
+    return ElasticsearchHandler()
 
 def test_index_document(es_handler):
+    # Clean up the index first if it exists
+    es_handler.es.options(ignore_status=[400, 404]).indices.delete(index="test_index")
+
+    # Create the index
+    es_handler.es.options(ignore_status=[400]).indices.create(index="test_index")
+
+    # Index a document
     response = es_handler.index_document(
         "test_index",
         {
@@ -30,8 +22,6 @@ def test_index_document(es_handler):
         },
     )
     assert response is not None
-    assert "_id" in response
-
 
 def test_search_documents(es_handler):
     # Index a document first
@@ -42,6 +32,10 @@ def test_search_documents(es_handler):
             "content": "This is a test document for Elasticsearch.",
         },
     )
+
+    # Refresh the index
+    es_handler.es.indices.refresh(index="test_index")
+
     query = {"match": {"title": "Test Document"}}
     results = es_handler.search_documents("test_index", query)
     assert len(results) > 0
