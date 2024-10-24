@@ -8,3 +8,5 @@ __pycache__/
 
 # Poetry
 poetry.lock
+extensions/
+integrations/elasticsearch*
