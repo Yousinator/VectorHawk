@@ -8,3 +8,151 @@
 2024-10-21 00:23:04,656 - vectorhawk - DEBUG - LLM Model: mistral-7b
 2024-10-21 00:23:04,656 - vectorhawk - DEBUG - Debug Mode: True
 2024-10-21 00:23:04,656 - vectorhawk - INFO - Core configuration is working as expected!
+2025-04-24 13:36:08,383 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:36:08,386 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:36:08,388 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:36:40,451 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:36:40,452 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:36:40,453 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:36:40,454 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 13:36:40,454 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 13:36:41,696 - vectorhawk - ERROR - Failed to fetch CVE data: 404 Client Error: Not Found for url: https://services.nvd.nist.gov/rest/json/cves/1.0
+2025-04-24 13:36:41,697 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-24 13:36:41,697 - vectorhawk - INFO - Connected to MITRE TAXII server.
+2025-04-24 13:37:00,089 - vectorhawk - ERROR - Failed to fetch MITRE data from TAXII: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2025-04-24 13:49:44,894 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:49:44,896 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:49:44,897 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 13:49:44,898 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 13:49:44,898 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 13:49:49,880 - vectorhawk - ERROR - Failed to fetch CVE data: 404 Client Error: Not Found for url: https://services.nvd.nist.gov/rest/json/cves/1.0
+2025-04-24 13:49:49,880 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-24 13:49:49,881 - vectorhawk - INFO - Connected to MITRE TAXII server.
+2025-04-24 13:50:14,939 - vectorhawk - ERROR - Failed to fetch MITRE data from TAXII: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2025-04-24 15:25:52,102 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 15:25:52,102 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 15:25:52,103 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 15:25:52,104 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 15:25:52,104 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 15:26:06,112 - vectorhawk - ERROR - Failed to fetch CVE data: HTTPSConnectionPool(host='services.nvd.nist.gov', port=443): Max retries exceeded with url: /rest/json/cves/1.0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f4cf633a680>: Failed to resolve 'services.nvd.nist.gov' ([Errno -3] Temporary failure in name resolution)"))
+2025-04-24 15:26:06,113 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-24 15:26:06,113 - vectorhawk - INFO - Connected to MITRE TAXII server.
+2025-04-24 15:26:21,515 - vectorhawk - ERROR - Failed to fetch MITRE data from TAXII: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2025-04-24 22:28:18,171 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:28:18,173 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:28:18,174 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:28:18,175 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 22:28:18,175 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 22:28:19,142 - vectorhawk - ERROR - Failed to fetch CVE data: 404 Client Error: Not Found for url: https://services.nvd.nist.gov/rest/json/cves/1.0
+2025-04-24 22:28:19,143 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-24 22:28:19,143 - vectorhawk - INFO - Connected to MITRE TAXII server.
+2025-04-24 22:30:31,083 - vectorhawk - ERROR - Failed to fetch MITRE data from TAXII: HTTPSConnectionPool(host='cti-taxii.mitre.org', port=443): Max retries exceeded with url: /taxii/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f688edcdd50>, 'Connection to cti-taxii.mitre.org timed out. (connect timeout=None)'))
+2025-04-24 22:43:33,008 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:43:33,008 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:43:33,009 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:43:33,009 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 22:43:33,009 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 22:43:53,932 - vectorhawk - INFO - Successfully fetched CVE data.
+2025-04-24 22:43:53,974 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-24 22:43:53,974 - vectorhawk - INFO - Connected to MITRE TAXII server.
+2025-04-24 22:46:08,041 - vectorhawk - ERROR - Failed to fetch MITRE data from TAXII: HTTPSConnectionPool(host='cti-taxii.mitre.org', port=443): Max retries exceeded with url: /taxii/ (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f52053e5cf0>, 'Connection to cti-taxii.mitre.org timed out. (connect timeout=None)'))
+2025-04-24 22:52:39,650 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:52:39,651 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:52:39,652 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:52:39,652 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 22:52:39,652 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 22:54:26,735 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:54:26,735 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:54:26,736 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:54:26,736 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 22:54:26,737 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 22:54:52,417 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:54:52,417 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:54:52,418 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:54:52,418 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 22:54:52,419 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 22:55:16,433 - vectorhawk - INFO - Successfully fetched CVE data.
+2025-04-24 22:55:16,480 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-24 22:55:16,480 - vectorhawk - ERROR - Failed to fetch MITRE data from TAXII: Server.__init__() got an unexpected keyword argument 'session'
+2025-04-24 22:56:49,902 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:56:49,903 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:56:49,903 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:56:49,904 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 22:56:49,904 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 22:56:50,867 - vectorhawk - ERROR - Failed to fetch CVE data: 404 Client Error:  for url: https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-03-25T19%3A56%3A49%3A000+UTC-00%3A00&pubEndDate=2025-04-24T19%3A56%3A49%3A000+UTC-00%3A00
+2025-04-24 22:56:50,867 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-24 22:56:50,868 - vectorhawk - ERROR - Failed to fetch MITRE data from TAXII: Server.__init__() got an unexpected keyword argument 'session'
+2025-04-24 22:57:49,551 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:57:49,551 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:57:49,552 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-24 22:57:49,552 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-24 22:57:49,552 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-24 22:58:16,183 - vectorhawk - INFO - Successfully fetched CVE data.
+2025-04-24 22:58:19,792 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:2.420s]
+2025-04-24 22:58:20,280 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.433s]
+2025-04-24 22:58:20,749 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.442s]
+2025-04-24 22:58:21,056 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.289s]
+2025-04-24 22:58:21,058 - vectorhawk - INFO - Stored 2000 raw documents to raw-cve-data.
+2025-04-24 22:58:21,059 - vectorhawk - INFO - Ingested 2000 CVE records.
+2025-04-24 22:58:21,062 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-24 22:58:21,063 - vectorhawk - ERROR - Failed to fetch MITRE data from TAXII: Server.__init__() got an unexpected keyword argument 'session'
+2025-04-27 14:05:09,539 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:05:09,541 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:05:09,542 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:05:09,542 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:05:09,542 - vectorhawk - INFO - Ingesting MITRE data...
+2025-04-27 14:05:09,543 - vectorhawk - INFO - Connected to MITRE TAXII server.
+2025-04-27 14:05:20,157 - vectorhawk - ERROR - Network error while connecting to MITRE TAXII: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2025-04-27 14:05:20,157 - vectorhawk - INFO - Preprocessing CVE data...
+2025-04-27 14:05:20,227 - elastic_transport.transport - INFO - POST http://localhost:9200/raw-cve-data/_search [status:200 duration:0.037s]
+2025-04-27 14:05:20,957 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.621s]
+2025-04-27 14:05:20,963 - vectorhawk - INFO - Stored 2000 processed CVE documents to processed-cve-data.
+2025-04-27 14:36:13,645 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:36:13,648 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:36:13,649 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:36:13,650 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:36:13,650 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-27 14:36:13,650 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-27 14:36:19,641 - vectorhawk - INFO - Successfully fetched CVE data.
+2025-04-27 14:36:21,858 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:1.025s]
+2025-04-27 14:36:22,167 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.260s]
+2025-04-27 14:36:22,464 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.279s]
+2025-04-27 14:36:22,716 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.227s]
+2025-04-27 14:36:22,718 - vectorhawk - INFO - Stored 2000 raw documents to raw-cve-data.
+2025-04-27 14:36:22,719 - vectorhawk - INFO - Ingested 2000 CVE records.
+2025-04-27 14:43:19,949 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:43:19,949 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:43:19,950 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:43:19,950 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 14:43:19,950 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-27 14:43:19,950 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-27 14:43:25,464 - vectorhawk - INFO - Successfully fetched CVE data.
+2025-04-27 14:43:27,371 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.755s]
+2025-04-27 14:43:27,567 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.153s]
+2025-04-27 14:43:27,745 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.161s]
+2025-04-27 14:43:27,872 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.106s]
+2025-04-27 14:43:27,873 - vectorhawk - INFO - Stored 2000 raw documents to raw-cve-data.
+2025-04-27 14:43:27,874 - vectorhawk - INFO - Ingested 2000 CVE records.
+2025-04-27 14:43:27,878 - vectorhawk - INFO - Preprocessing CVE data...
+2025-04-27 14:43:27,893 - elastic_transport.transport - INFO - POST http://localhost:9200/raw-cve-data/_search [status:200 duration:0.015s]
+2025-04-27 14:43:27,936 - elastic_transport.transport - INFO - POST http://localhost:9200/processed-cve-data/_search [status:404 duration:0.001s]
+2025-04-27 14:43:27,937 - vectorhawk - ERROR - Failed to process CVE data: NotFoundError(404, 'index_not_found_exception', 'no such index [processed-cve-data]', processed-cve-data, index_or_alias)
+2025-04-27 16:18:08,554 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 16:18:08,558 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 16:18:08,560 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 16:18:08,560 - vectorhawk - INFO - Configuration initialized successfully with given environment variables.
+2025-04-27 16:18:08,561 - vectorhawk - INFO - Starting VectorHawk ingestion test...
+2025-04-27 16:18:08,561 - vectorhawk - INFO - Ingesting CVE data...
+2025-04-27 16:18:14,581 - vectorhawk - INFO - Successfully fetched CVE data.
+2025-04-27 16:18:17,317 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.577s]
+2025-04-27 16:18:17,791 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.366s]
+2025-04-27 16:18:18,234 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.400s]
+2025-04-27 16:18:18,636 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.367s]
+2025-04-27 16:18:18,639 - vectorhawk - INFO - Stored 2000 raw documents to raw-cve-data.
+2025-04-27 16:18:18,640 - vectorhawk - INFO - Ingested 2000 CVE records.
+2025-04-27 16:18:18,647 - vectorhawk - INFO - Preprocessing CVE data...
+2025-04-27 16:18:20,145 - elastic_transport.transport - INFO - POST http://localhost:9200/raw-cve-data/_search [status:200 duration:1.496s]
+2025-04-27 16:18:22,279 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:1.761s]
+2025-04-27 16:18:22,301 - vectorhawk - INFO - Stored 4000 processed CVE documents to processed-cve-data.
+2025-04-27 16:18:22,836 - elastic_transport.transport - INFO - PUT http://localhost:9200/_bulk [status:200 duration:0.510s]
+2025-04-27 16:18:22,858 - vectorhawk - INFO - Deleted 4000 documents from raw-cve-data.

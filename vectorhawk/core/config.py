@@ -36,10 +36,22 @@ class Config:
             logger.error("LLM_API_PORT must be an integer.")
             raise ValueError("LLM_API_PORT must be an integer.")
 
+        # Ingestion Setup
+        self.CVE_API_ENDPOINT = os.getenv(
+            "CVE_API_ENDPOINT", "https://services.nvd.nist.gov/rest/json/cves/1.0"
+        )
+        self.MITRE_DISCOVERY_URL = os.getenv(
+            "MITRE_DISCOVERY_URL", "https://cti-taxii.mitre.org/taxii/"
+        )
+        self.CVE_API_KEY = os.getenv(
+            "CVE_API_KEY", ""
+        )
+
         # General Configuration
         self.DEBUG_MODE = os.getenv("DEBUG_MODE", "False").lower() in ["true", "1", "t"]
         self.LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
         self.LOG_DIR = os.getenv("LOG_DIR", "./logs")
+
 
         logger.info(
             "Configuration initialized successfully with given environment variables."
