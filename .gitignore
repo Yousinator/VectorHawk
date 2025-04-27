@@ -10,3 +10,4 @@ __pycache__/
 poetry.lock
 extensions/
 integrations/elasticsearch*
+integrations/kibana*

@@ -14,6 +14,10 @@ fastapi = "^0.115.2"
 llama-index = "^0.11.19"
 python-dotenv = "^1.0.1"
 pytest = "^8.3.3"
+taxii2-client = "^2.3.0"
+requests = "^2.32.3"
+stix2 = "^3.0.1"
+urllib3 = "^2.4.0"
 
 [build-system]
 requires = ["poetry-core"]

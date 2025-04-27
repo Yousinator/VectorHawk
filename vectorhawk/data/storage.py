@@ -1,6 +1,7 @@
-from elasticsearch import Elasticsearch
+from elasticsearch import Elasticsearch, helpers
 from ..core.config import Config  # Use Config
 from ..core.exceptions import ElasticsearchError
+from ..core.logger import logger
 
 
 class ElasticsearchHandler:
@@ -10,6 +11,9 @@ class ElasticsearchHandler:
         es_host = self.config.ES_HOST
         es_username = self.config.ES_USER
         es_password = self.config.ES_PASSWORD
+
+        if not es_username or not es_password:
+            raise ElasticsearchError(f"Elasticsearch username or password is not set in the environment.")
 
         # Initialize Elasticsearch client during object creation
         self.es = Elasticsearch(
@@ -33,3 +37,19 @@ class ElasticsearchHandler:
             return response["hits"]["hits"]
         except Exception as e:
             raise ElasticsearchError(f"Search failed: {e}")
+
+    def store_raw_data(self, index: str, documents: list[dict]):
+        try:
+            actions = [
+                {
+                    "_index": index,
+                    "_source": doc,
+                }
+                for doc in documents
+            ]
+            helpers.bulk(self.es, actions)
+            logger.info(f"Stored {len(actions)} raw documents to {index}.")
+        except Exception as e:
+            logger.error(f"Failed to store raw documents in {index}: {e}")
+            raise ElasticsearchError(f"Storage failed: {e}")
+
